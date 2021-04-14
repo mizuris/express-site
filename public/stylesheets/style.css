@@ -1,0 +1,223 @@
+:root {
+  --main-red: #FE4323;
+  --main-gray: #E0E5EB;
+}
+
+body {
+  font: 14px "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 30px;
+  background-color: var(--main-gray);
+}
+
+.navbar-brand {
+  font-weight: 800;
+  margin-right: 50px;
+  color: var(--main-red);
+}
+
+.navbar-brand:hover {
+  color: black;
+}
+
+.nav-item a {
+  color: black;
+}
+
+.nav-item a:hover {
+  color: var(--main-red);
+}
+
+/* ANIMATIONS */
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* HOME PAGE */
+
+.heading-section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: -1;
+}
+
+.circle1 {
+  position: absolute;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+  top: 60px;
+  background: var(--main-gray);
+  animation: slideFromRight 1.2s 300ms ease forwards;
+  opacity: 0;
+}
+
+.circle2 {
+  border-radius: 50%;
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  left: 297px;
+  bottom: 250px;
+  background: url("/images/bg-img.jpg") center no-repeat;
+  background-size: 100% 100%;
+  animation: slideFromLeft 1s ease forwards;
+  opacity: 0;
+}
+
+.circle3 {
+  position: absolute;
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  right: 350px;
+  bottom: 150px;
+  background: url("/images/beans.jpg") center no-repeat;
+  background-size: 200%;
+  border: 10px solid #FFFFFF;
+  opacity: 0;
+  animation: slideFromLeft 1s 800ms ease forwards;
+}
+
+.heading-text {
+  color: var(--main-red);
+  z-index: 2;
+  position: absolute;
+  bottom: 100px;
+  right: 250px;
+  opacity: 0;
+  color: var(--main-red);
+  animation: fadeIn 1s 1200ms ease forwards;
+}
+
+.heading-text h1 {
+  font-size: 120px;
+  font-weight: 1000;
+  margin-bottom: 50px;
+}
+
+.heading-text p {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.home-section {
+  height: 50vh;
+  width: 100%;
+}
+
+.home-section-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--main-gray);
+  height: 60%;
+  width: 100%;
+  margin: 0 auto 100px auto;
+  color: var(--main-red);
+}
+
+.home-section-text h3 {
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.home-section-buttons {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.button-main, .button-secondary {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: black;
+  font-weight: 500;
+}
+
+.button-main {
+  background: var(--main-red);
+  color: var(--main-gray);
+}
+
+.button-secondary {
+  border: var(--main-red) 1px solid;
+  color: var(--main-red);
+}
+
+.card {
+  background: var(--main-gray);
+  margin-bottom: 100px;
+  border: none;
+  height: 350px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+}
+
+.card-title {
+  color: var(--main-red);
+}
+
+.card-link {
+  color: var(--main-gray);
+  position: relative;
+  font-weight: 600;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background: var(--main-red);
+  border-radius: 10px;
+}
+
+.card-link:hover {
+  color: var(--main-red);
+  background: black;
+}

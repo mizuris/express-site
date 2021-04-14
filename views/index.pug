@@ -1,0 +1,71 @@
+extends layout
+
+block content
+  .container 
+    .heading-section.mb-5
+      .heading-text
+        h1 Explore
+        p Take a tour to our store and find exotic tastes of coffee. Find yourself suitable coffee machine form world's best producers.
+      .circle1 
+      .circle2 
+      .circle3
+
+  .home-section
+    .home-section-text.text-center
+      h3.text-uppercase Check our special offers
+      p.text-muted Or contact us to get personalized offer and discounts.
+      .home-section-buttons 
+        a.button-main(href="/special-offers") Check special offers 
+        a.button-secondary(href="/special-offers") Contact us
+
+    .home-section-cards.container
+      .row 
+        .col-3 
+          .card
+            .card-body
+              h4.card-title Services
+              p.card-text
+                | Broken machine? No worries! We can fix this.
+                | Our store repairs broken coffee machines and
+                | keeps working ones in good condition. Our experienced 
+                | service workers will take care of your machine with 
+                | best practices and in short time, so you don't run 
+                | out of coffee!
+              a.card-link(href='/services') Discover services
+        .col-3 
+          .card
+            .card-body
+              h4.card-title Premium machines
+              p.card-text
+                | Our store offer the best coffee machines in the world.
+                | We sell brands like:
+                br
+                | - Phillips 
+                br
+                | - Kurps 
+                br
+                | - Delonghi 
+                br
+                | - Saeco
+              a.card-link(href='/expresses') Explore machines
+        .col-3 
+          .card
+            .card-body
+              h4.card-title Discounts
+              p.card-text
+                | Subscribe to our newsletter to be up to date with 
+                | our incoming discounts. We run weekly -50% sales on 
+                | the most popular coffee types, so you better don't 
+                | miss this event!
+              a.card-link(href='/special-offers') Check discounts
+        .col-3 
+          .card
+            .card-body
+              h4.card-title Fast delivery
+              p.card-text
+                | ExpressShop offer one of the fastest deliveries. You'll 
+                | get your desired coffee or machine in under 24 hours! 
+                | You can order a mobile service to your location if you 
+                | are unable to bring your machine to one of our service 
+                | points!
+              a.card-link(href='/contact') Contact us now
