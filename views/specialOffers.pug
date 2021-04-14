@@ -1,5 +1,62 @@
 extends layout
 
 block content
-    footer 
-        p this is special :)
+    .container
+        .special-heading 
+            h1.text-uppercase.text-center.mt-4 Hot stuff
+            p.text-muted.text-center Top products of the day
+        .row.mb-5
+            .col-12
+                .special-item#krups
+                    .item-img 
+                        img(src="/images/cerrado.png")
+                    .item-details
+                        .item-text 
+                            h4 Brasilia Cerrado 1kg
+                            p Sweet and energetic coffee, 100% Arabica.
+                            p Price: 65,00 zł/kg
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#saeco
+                    .item-img 
+                        img(src="/images/plantation.png")
+                    .item-details
+                        .item-text 
+                            h4 India Plantation 1kg
+                            p Straight from India, original flavour.
+                            p Price: 69,00 zł/kg
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#philips
+                    .item-img 
+                        img(src="/images/saorafael.png")
+                    .item-details
+                        .item-text 
+                            h4 Brasilia Sao Rafael 1kg
+                            p Taste of fresh watermelon? Try this 100% Arabica coffee.
+                            p Price: 49,00 zł/kg
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#delonghi
+                    .item-img 
+                        img(src="/images/wakeup.png")
+                    .item-details
+                        .item-text 
+                            h4 Wake up blend 1kg
+                            p Strong coffee to help you start the day.
+                            p Price: 65,00 zł/kg
+                        a.item-button(href="#") BUY NOW!
+
+    footer.footer-main
+        .footer-logo ExpressShop
+        .footer-text.container
+            h5.text-uppercase.text-center Contact
+            .footer-adress
+                p 
+                | City: New York
+                br
+                | Adress: 1032 Westwood Avenue
+                br
+                | Phone: 516-858-8128
+                br
+                | E-mail: express-shop@gmail.com

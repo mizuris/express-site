@@ -1,6 +1,7 @@
 :root {
-  --main-red: #FE4323;
-  --main-gray: #E0E5EB;
+  --main-red: #fe4323;
+  --main-gray: #e0e5eb;
+  --alt-red: #ff6347;
 }
 
 body {
@@ -11,9 +12,13 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  color: var(--main-red);
+}
+
 .navbar {
-  padding: 30px;
   background-color: var(--main-gray);
+  min-height: 80px;
 }
 
 .navbar-brand {
@@ -67,74 +72,98 @@ a {
   }
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 992px) {
+  .mobile-nav {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .home-section-buttons {
+    flex-direction: column;
+  }
+  .button-main,
+  .button-secondary {
+    margin: 10px 0;
+  }
+}
+
+/* FOOTER */
+.footer-main {
+  height: 15vh;
+  background: var(--main-red);
+  position: relative;
+  color: var(--main-gray);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-text {
+  width: auto;
+  margin: 0 auto;
+  z-index: 3;
+}
+
+.footer-logo {
+  position: absolute;
+  color: var(--alt-red);
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  pointer-events: none;
+}
+
+/* MOBILE NAV */
+.mobile-nav {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: 0;
+  text-align: center;
+}
+
+.mobile-nav-link {
+  color: var(--main-red);
+}
+
+@media screen and (max-width: 992px) {
+  .mobile-nav {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+}
+
 /* HOME PAGE */
 
 .heading-section {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 97px);
   position: relative;
-  z-index: -1;
 }
 
-.circle1 {
+.heading-section img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
   position: absolute;
-  border-radius: 50%;
-  width: 400px;
-  height: 400px;
-  left: 200px;
-  top: 60px;
-  background: var(--main-gray);
-  animation: slideFromRight 1.2s 300ms ease forwards;
-  opacity: 0;
-}
-
-.circle2 {
-  border-radius: 50%;
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  left: 297px;
-  bottom: 250px;
-  background: url("/images/bg-img.jpg") center no-repeat;
-  background-size: 100% 100%;
-  animation: slideFromLeft 1s ease forwards;
-  opacity: 0;
-}
-
-.circle3 {
-  position: absolute;
-  border-radius: 50%;
-  width: 250px;
-  height: 250px;
-  right: 350px;
-  bottom: 150px;
-  background: url("/images/beans.jpg") center no-repeat;
-  background-size: 200%;
-  border: 10px solid #FFFFFF;
-  opacity: 0;
-  animation: slideFromLeft 1s 800ms ease forwards;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .heading-text {
-  color: var(--main-red);
-  z-index: 2;
   position: absolute;
-  bottom: 100px;
-  right: 250px;
-  opacity: 0;
+  left: 10%;
+  top: 10%;
   color: var(--main-red);
-  animation: fadeIn 1s 1200ms ease forwards;
-}
-
-.heading-text h1 {
-  font-size: 120px;
-  font-weight: 1000;
-  margin-bottom: 50px;
-}
-
-.heading-text p {
-  font-size: 15px;
-  font-weight: 500;
 }
 
 .home-section {
@@ -167,7 +196,8 @@ a {
   margin-top: 40px;
 }
 
-.button-main, .button-secondary {
+.button-main,
+.button-secondary {
   width: 150px;
   height: 50px;
   display: flex;
@@ -192,7 +222,7 @@ a {
   background: var(--main-gray);
   margin-bottom: 100px;
   border: none;
-  height: 350px;
+  min-height: 350px;
 }
 
 .card-body {
@@ -220,4 +250,59 @@ a {
 .card-link:hover {
   color: var(--main-red);
   background: black;
+}
+
+/* SPECIAL OFFERS */
+
+.special-item {
+  width: 100%;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: var(--main-gray) 1px solid;
+}
+
+.special-heading {
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-img {
+  height: 100%;
+  margin-left: 20px;
+}
+
+.item-img img {
+  height: 100%;
+  width: auto;
+}
+
+.item-details {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.item-button {
+  padding: 10px;
+  background-color: var(--main-red);
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* EXPRESSES */
+
+form label {
+  margin-right: 10px;
+}
+
+.selected {
+  background: var(--main-gray);
 }

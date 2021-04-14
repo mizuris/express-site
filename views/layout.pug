@@ -8,18 +8,10 @@ html
     nav.navbar.navbar-expand-md
       .container
         a.navbar-brand(href='/') ExpressShop
-        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-          span.navbar-toggler-icon
-        #navbarSupportedContent.collapse.navbar-collapse
-          ul.navbar-nav
-            li.nav-item
-              a.nav-link(href='/') Home 
-            li.nav-item
-              a.nav-link(href='/expresses') Products
-            li.nav-item
-              a.nav-link(href='/special-offers') Special Offers
-            li.nav-item
-              a.nav-link(href='/services') Services
-            li.nav-item
-              a.nav-link(href='/contact') Contact
+        .mobile-nav.container
+          a.nav-link.mobile-nav-link(href='/') Home 
+          a.nav-link.mobile-nav-link(href='/expresses') Coffee Machines
+          a.nav-link.mobile-nav-link(href='/special-offers') Special Offers
+          a.nav-link.mobile-nav-link(href='/services') Services
+          a.nav-link.mobile-nav-link(href='/contact') Contact
     block content

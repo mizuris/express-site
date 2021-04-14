@@ -1,5 +1,62 @@
 extends layout
 
 block content
-    footer 
-        p this is expre :)
+    .container
+        .special-heading 
+            h1.text-uppercase.text-center.mt-4 Coffee Machines
+            p.text-muted.text-center Bestsellers
+            form(action="/expresses" method="post")
+                label(for="model") Find your model
+                input(type="text" name="model")
+                input(type="submit" value="Search") 
+        .row.mb-5
+            .col-12
+                .special-item#krups
+                    .item-img 
+                        img(src="/images/krups.jpg")
+                    .item-details
+                        .item-text 
+                            h4 KRUPS Evidence One EA895E
+                            p Price: 2599 zł
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#saeco
+                    .item-img 
+                        img(src="/images/saeco.jpg")
+                    .item-details
+                        .item-text 
+                            h4 SAECO Xelsis SM7683/00
+                            p Price: 4999 zł
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#philips
+                    .item-img 
+                        img(src="/images/philips.jpg")
+                    .item-details
+                        .item-text 
+                            h4 PHILIPS LatteGo EP2231/40
+                            p Price: 1697 zł
+                        a.item-button(href="#") BUY NOW!
+            .col-12
+                .special-item#delonghi
+                    .item-img 
+                        img(src="/images/delonghi.jpg")
+                    .item-details
+                        .item-text 
+                            h4 DELONGHI ECAM 23.460.B
+                            p Price: 1799 zł
+                        a.item-button(href="#") BUY NOW!
+
+    footer.footer-main
+        .footer-logo ExpressShop
+        .footer-text.container
+            h5.text-uppercase.text-center Contact
+            .footer-adress
+                p 
+                | City: New York
+                br
+                | Adress: 1032 Westwood Avenue
+                br
+                | Phone: 516-858-8128
+                br
+                | E-mail: express-shop@gmail.com

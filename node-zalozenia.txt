@@ -1,0 +1,15 @@
+Oferty specjalne - podstrona prezentuje 4 produkty ustawione w gridzie w pionie
+zawierające nazwę obraz i opis
+
+Ekspresy - podstrona na której wyświetlone są 4 dowolne ekspresy. Po wpisaniu przez uzytkownika nazwy ekspresu 
+tło pod wybranym ekspresem zmienia swój kolor na inny
+
+Usługi - strona prezentująca usługi w postaci jednego z 2 plików pdf do pobrania po wpisaniu tekstu do 
+pola tekstowego i kliknięciu na przycisk
+
+Kontakt - Link do adresu email
+
+Każda strona powinna być szbudowana w oparciu o teplate postadający główny element oraz stopkę
+dla strony kontakt stopka jest inna. Nie powinna zawierać informacji kontaktowych
+
+Na każdej stronie powinno być załadowany statyczny obraz tła ze elementów statycznych
