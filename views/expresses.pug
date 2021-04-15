@@ -5,10 +5,12 @@ block content
         .special-heading 
             h1.text-uppercase.text-center.mt-4 Coffee Machines
             p.text-muted.text-center Bestsellers
-            form(action="/expresses" method="post")
+            form(action="/expresses" method="get")
                 label(for="model") Find your model
                 input(type="text" name="model")
-                input(type="submit" value="Search") 
+                input(type="submit" value="Search")
+                p model found is #{model}
+                h4= model
         .row.mb-5
             .col-12
                 .special-item#krups

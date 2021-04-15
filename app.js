@@ -3,6 +3,7 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
+const bodyParser = require("body-parser");
 
 const indexRouter = require("./routes/index");
 const usersRouter = require("./routes/users");
@@ -10,7 +11,7 @@ const contactRouter = require("./routes/contact");
 const servicesRouter = require("./routes/services");
 const specialOffersRouter = require("./routes/specialOffers");
 const expressesRouter = require("./routes/expresses");
-  
+
 var app = express();
 
 // view engine setup

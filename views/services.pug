@@ -1,5 +1,25 @@
 extends layout
 
 block content
-    footer 
-        p this is serv :)
+    .container.text-center.services
+        .services-header 
+            h1.text-uppercase.mb-2 Check our services 
+            p.text-muted.mb-5 Type something and push button to download .pdf file!
+        .input-container
+            label.mb-3(for="queryInput") Type in something
+            .input-inner
+                input(type="text" name="queryInput") 
+                input(type="submit" value="Get file")
+    footer.footer-main
+      .footer-logo ExpressShop
+      .footer-text.container
+        h5.text-uppercase.text-center Contact
+        .footer-adress
+          p 
+          | City: New York
+          br
+          | Adress: 1032 Westwood Avenue
+          br
+          | Phone: 516-858-8128
+          br
+          | E-mail: express-shop@gmail.com

@@ -306,3 +306,28 @@ form label {
 .selected {
   background: var(--main-gray);
 }
+
+/* SERVICES */
+
+.services {
+  height: calc(100vh - 220px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* CONTACT */
+
+.contact {
+  height: calc(100vh - 80px);
+}
+
+.map-header {
+  color: var(--main-red);
+}
+
+.map {
+  width: 70%;
+  height: auto;
+}
